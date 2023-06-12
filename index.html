@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitFav</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <script src="js/main.js" type="module" defer></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="./assets/Gitfav.svg" alt=""> 
+            <div class="search">
+                <label class="sr-only" for="input-search">Digite o Github username que quer favoritar</label>
+                <input id="input-search" type="text" placeholder="Digite o Github username que quer favoritar">
+                <button>
+                    <img src="./assets/star.svg" alt="">
+                    <span>FAVORITAR</span>
+                </button>
+            </div>
+        </header>
+        <div class="table-container">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="user-header">Usuário</th>
+                        <th>Repositories</th>
+                        <th>Followers</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td class="user">
+                        <img src="https://github.com/marcelo-dos-santos.png" alt="">
+                        <a href="https://github.com/marcelo-dos-santos">
+                            <p>Marcelo dos Santos</p>
+                            <span>/marcelo-dos-santos</span>
+                        </a>
+                    </td>
+                    <td class="repositories">
+                        15
+                    </td>
+                    <td class="followers">
+                        1
+                    </td>
+                    <td>
+                        <button class="remove">Remover</button>
+                    </td>
+                </tbody>
+            </table>
+        </div> 
+    </div>
+</body>
+</html>
